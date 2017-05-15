@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}
+	br
+	form( action="removeMateria", method="POST")
+		p email del weon que le pondremos materia
+		input( type="text", name="email", id="email" )
+		br
+		br
+		p materia
+		input( type="text", name="materia", id="materia" )
+		br
+		input( type="submit", value="Cambiala" )

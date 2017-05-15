@@ -1,0 +1,24 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}
+	br
+	form( action="updateMateria", method="POST")
+		p email del weon que le pondremos materia
+		input( type="text", name="email", id="email" )
+		br
+		p materia vieja a modificar
+		input( type="text", name="materiaOld", id="materiaOld" )
+		br
+		br
+		p nombre
+		input( type="text", name="nombre", id="nombre" )
+		br
+		p semestre
+		input( type="text", name="semestre", id="semestre" )
+		br
+		p califiacion
+		input( type="text", name="califiacion", id="califiacion" )
+		br
+		input( type="submit", value="Cambiala" )

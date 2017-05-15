@@ -1,0 +1,23 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}
+	br
+	for user in info
+		ol
+			li= user._id
+			li= user.nombre
+			li= user.edad
+			li= user.telefono
+			li= user.escuela
+			li Materias
+				for materia in user.materias
+					ul
+						li= materia.nombre
+						li= materia.semestre
+						li= materia.califiacion
+				else
+					p No tiene materias el vato
+	else
+		p sorry bro, hay nada

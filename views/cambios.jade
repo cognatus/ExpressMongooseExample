@@ -1,0 +1,25 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}
+	br
+	form( action="cambios", method="POST")
+		p email del weon a cambiar
+		input( type="text", name="oldEmail", id="oldEmail" )
+		br
+		br
+		br
+		p nombre
+		input( type="text", name="nombre", id="nombre" )
+		br
+		p edad
+		input( type="text", name="edad", id="edad" )
+		br
+		p telefono
+		input( type="text", name="telefono", id="telefono" )
+		br
+		p escuela
+		input( type="text", name="escuela", id="escuela" )
+		br
+		input( type="submit", value="Cambiala" )
